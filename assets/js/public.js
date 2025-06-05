@@ -37,83 +37,125 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// mega menu for mobile
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all mega menu triggers
+  const triggers = document.querySelectorAll(".mega-menu-trigger-m");
+
+  // Add click event to each trigger
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Get the target menu ID from data attribute
+      const targetId = this.getAttribute("data-target");
+      const targetMenu = document.getElementById(targetId);
+
+      // Check if the clicked menu is already active
+      const isActive = targetMenu.classList.contains("active");
+
+      // Close all mega menus first
+      document
+        .querySelectorAll(".mega-menu-m, .mega-menu-two-m")
+        .forEach((menu) => {
+          menu.classList.remove("active");
+        });
+
+      // If the clicked menu wasn't active, open it
+      if (!isActive) {
+        targetMenu.classList.add("active");
+      }
+    });
+  });
+
+  // Close menus when clicking outside
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".has-mega-menu-m")) {
+      document
+        .querySelectorAll(".mega-menu-m, .mega-menu-two-m")
+        .forEach((menu) => {
+          menu.classList.remove("active");
+        });
+    }
+  });
+});
+
 // language dropdown ===================================================================================================================================
 
 document.addEventListener("DOMContentLoaded", function () {
-  const dropdown = document.getElementById("langDropdown");
-  const selectedLang = document.getElementById("selectedLang");
-  const optionsContainer = dropdown.querySelector(".language-options");
-
-  // Available language options (flags only)
+  // Available language options
   const languages = [
     { code: "UK", flag: "assets/img/UK.svg" },
     { code: "US", flag: "assets/img/US.svg" },
   ];
 
-  // Initialize with default language
-  let currentLang = "UK";
+  // Initialize all dropdowns
+  const dropdowns = document.querySelectorAll(".language-dropdown");
 
-  // Function to update the dropdown options
-  function updateOptions() {
-    // Clear existing options
-    optionsContainer.innerHTML = "";
+  dropdowns.forEach((dropdown) => {
+    const button = dropdown.querySelector(".language-button");
+    const optionsContainer = dropdown.querySelector(".language-options");
+    let currentLang = "UK";
 
-    // Add available options (excluding current selection)
-    languages.forEach((lang) => {
-      if (lang.code !== currentLang) {
-        const option = document.createElement("div");
-        option.className = "language-option";
-        option.dataset.lang = lang.code;
+    // Update the selected language display
+    function updateSelectedLang() {
+      const selectedLanguage = languages.find(
+        (lang) => lang.code === currentLang
+      );
+      button.innerHTML = `
+        <img src="${selectedLanguage.flag}" alt="${currentLang}" class="language-flag">
+        <svg
+                width="13"
+                height="8"
+                viewBox="0 0 13 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.91 0.433028L12.97 1.49403L7.193 7.27303C7.10043 7.36618 6.99036 7.44011 6.86911 7.49056C6.74786 7.54101 6.61783 7.56698 6.4865 7.56698C6.35517 7.56698 6.22514 7.54101 6.10389 7.49056C5.98264 7.44011 5.87257 7.36618 5.78 7.27303L-2.65457e-07 1.49403L1.06 0.434028L6.485 5.85803L11.91 0.433028Z"
+                  fill="#FEFEFE"
+                />
+              </svg>
+      `;
+    }
 
-        option.innerHTML = `<img src="${lang.flag}" alt="${lang.code}" class="language-flag">`;
+    // Update the dropdown options
+    function updateOptions() {
+      optionsContainer.innerHTML = "";
 
-        option.addEventListener("click", () => selectLanguage(lang.code));
-        optionsContainer.appendChild(option);
-      }
+      languages.forEach((lang) => {
+        if (lang.code !== currentLang) {
+          const option = document.createElement("div");
+          option.className = "language-option";
+          option.innerHTML = `<img src="${lang.flag}" alt="${lang.code}" class="language-flag">`;
+
+          option.addEventListener("click", () => {
+            currentLang = lang.code;
+            updateSelectedLang();
+            updateOptions();
+            dropdown.classList.remove("open");
+          });
+
+          optionsContainer.appendChild(option);
+        }
+      });
+    }
+
+    // Toggle dropdown
+    button.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle("open");
     });
-  }
 
-  // Function to handle language selection
-  function selectLanguage(langCode) {
-    currentLang = langCode;
+    // Initialize
     updateSelectedLang();
     updateOptions();
-    closeDropdown();
-  }
-
-  // Function to update the selected language display
-  function updateSelectedLang() {
-    const selectedLanguage = languages.find(
-      (lang) => lang.code === currentLang
-    );
-    selectedLang.innerHTML = `
-      <img src="${selectedLanguage.flag}" alt="${currentLang}" class="language-flag">
-      <img src="assets/img/Arrow-down.svg" alt="Arrow" class="arrow">
-    `;
-  }
-
-  // Dropdown visibility functions
-  function toggleDropdown() {
-    dropdown.classList.toggle("open");
-  }
-
-  function closeDropdown() {
-    dropdown.classList.remove("open");
-  }
-
-  // Event listeners
-  selectedLang.addEventListener("click", function (e) {
-    e.stopPropagation();
-    toggleDropdown();
   });
 
-  document.addEventListener("click", function (e) {
-    if (!dropdown.contains(e.target)) {
-      closeDropdown();
-    }
+  // Close dropdowns when clicking outside
+  document.addEventListener("click", () => {
+    dropdowns.forEach((dropdown) => {
+      dropdown.classList.remove("open");
+    });
   });
-
-  // Initialize
-  updateSelectedLang();
-  updateOptions();
 });

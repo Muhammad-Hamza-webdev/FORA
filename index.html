@@ -458,13 +458,24 @@
         <!-- buttons -->
         <div class="buttons">
           <!-- lang button -->
-          <div class="language-dropdown" id="langDropdown">
-            <button class="language-button" id="selectedLang">
+          <div class="language-dropdown">
+            <button class="language-button">
               <img src="assets/img/UK.svg" alt="UK" class="language-flag" />
-              <img src="assets/img/Arrow-down.svg" alt="Arrow" class="arrow" />
+              <svg
+                width="13"
+                height="8"
+                viewBox="0 0 13 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.91 0.433028L12.97 1.49403L7.193 7.27303C7.10043 7.36618 6.99036 7.44011 6.86911 7.49056C6.74786 7.54101 6.61783 7.56698 6.4865 7.56698C6.35517 7.56698 6.22514 7.54101 6.10389 7.49056C5.98264 7.44011 5.87257 7.36618 5.78 7.27303L-2.65457e-07 1.49403L1.06 0.434028L6.485 5.85803L11.91 0.433028Z"
+                  fill="#FEFEFE"
+                />
+              </svg>
             </button>
             <div class="language-options">
-              <!-- virtual dom -->
+              <!-- Options will be added dynamically -->
             </div>
           </div>
           <!-- contact btn -->
@@ -474,6 +485,7 @@
           <a href="#">
             <button class="btn-white">Get Started</button>
           </a>
+          <!-- user account -->
           <a href="#">
             <svg
               width="48"
@@ -700,14 +712,354 @@
         <div class="lang-mobile">
           <!-- lang button -->
           <div class="language-dropdown">
-            <button class="language-button selected-lang">
+            <button class="language-button">
               <img src="assets/img/UK.svg" alt="UK" class="language-flag" />
-              <img src="assets/img/Arrow-down.svg" alt="Arrow" class="arrow" />
+              <svg
+                width="13"
+                height="8"
+                viewBox="0 0 13 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.91 0.43302L12.97 1.49402L7.193 7.27302C7.10043 7.36617 6.99036 7.4401 6.86911 7.49055C6.74786 7.541 6.61783 7.56697 6.4865 7.56697C6.35517 7.56697 6.22514 7.541 6.10389 7.49055C5.98264 7.4401 5.87257 7.36617 5.78 7.27302L-2.65457e-07 1.49402L1.06 0.43402L6.485 5.85802L11.91 0.43302Z"
+                  fill="black"
+                />
+              </svg>
             </button>
             <div class="language-options">
-              <!-- virtual dom -->
+              <!-- Options will be added dynamically -->
             </div>
           </div>
+          <!-- button -->
+          <a href="#">
+            <button class="btn-black">Get Started</button>
+          </a>
+          <!-- user account -->
+          <a href="#">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="48"
+                height="48"
+                rx="4"
+                fill="#CA262B"
+                fill-opacity="0.2"
+              />
+              <path
+                d="M24 16C25.0609 16 26.0783 16.4214 26.8284 17.1716C27.5786 17.9217 28 18.9391 28 20C28 21.0609 27.5786 22.0783 26.8284 22.8284C26.0783 23.5786 25.0609 24 24 24C22.9391 24 21.9217 23.5786 21.1716 22.8284C20.4214 22.0783 20 21.0609 20 20C20 18.9391 20.4214 17.9217 21.1716 17.1716C21.9217 16.4214 22.9391 16 24 16ZM24 26C28.42 26 32 27.79 32 30V32H16V30C16 27.79 19.58 26 24 26Z"
+                fill="#EE3324"
+              />
+            </svg>
+          </a>
+        </div>
+        <!-- navbar mobile -->
+        <div class="navbar-m">
+          <ul>
+            <li class="has-mega-menu-m">
+              <a href="#" class="mega-menu-trigger-m" data-target="mega-menu-m">
+                Products
+                <svg
+                  width="13"
+                  height="8"
+                  viewBox="0 0 13 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.91 -0.000161692L12.97 1.06084L7.193 6.83984C7.10043 6.93299 6.99036 7.00692 6.86911 7.05737C6.74786 7.10782 6.61783 7.13379 6.4865 7.13379C6.35517 7.13379 6.22514 7.10782 6.10389 7.05737C5.98264 7.00692 5.87257 6.93299 5.78 6.83984L-2.65457e-07 1.06084L1.06 0.00083871L6.485 5.42484L11.91 -0.000161692Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <!-- mega menu -->
+              <div class="mega-menu-m" id="mega-menu-m">
+                <!-- section start -->
+                <ul>
+                  <li class="parent">
+                    Accept Payments
+                    <svg
+                      width="20"
+                      height="17"
+                      viewBox="0 0 20 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.8"
+                        d="M18 4.5H2V2.5H18M18 14.5H2V8.5H18M18 0.5H2C0.89 0.5 0 1.39 0 2.5V14.5C0 15.0304 0.210714 15.5391 0.585786 15.9142C0.960859 16.2893 1.46957 16.5 2 16.5H18C18.5304 16.5 19.0391 16.2893 19.4142 15.9142C19.7893 15.5391 20 15.0304 20 14.5V2.5C20 1.39 19.1 0.5 18 0.5Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </li>
+                  <li><a href="#">POS Device</a></li>
+                  <li><a href="#">Mobile Pay</a></li>
+                  <li><a href="#">Order & Pay</a></li>
+                  <li><a href="#">E-commerce</a></li>
+                  <li><a href="#">Pay by Link</a></li>
+                  <li><a href="#">MOTO Pay</a></li>
+                </ul>
+                <!-- section end -->
+                <!-- section start -->
+                <ul>
+                  <li class="parent">
+                    Business Operations
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.8"
+                        d="M18 15H16V17H18M18 11H16V13H18M20 19H12V17H14V15H12V13H14V11H12V9H20M10 7H8V5H10M10 11H8V9H10M10 15H8V13H10M10 19H8V17H10M6 7H4V5H6M6 11H4V9H6M6 15H4V13H6M6 19H4V17H6M12 7V3H2V21H22V7H12Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </li>
+                  <li><a href="#">POS Register</a></li>
+                  <li><a href="#">QR Menu</a></li>
+                  <li><a href="#">Tablet Menu</a></li>
+                  <li><a href="#">Stand Menu</a></li>
+                  <li><a href="#">Pickup</a></li>
+                  <li><a href="#">Digital Reservation</a></li>
+                </ul>
+                <!-- section end -->
+                <!-- section start -->
+                <ul>
+                  <li class="parent">
+                    Staff Performance
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.8"
+                        d="M3 22V8H7V22H3ZM10 22V2H14V22H10ZM17 22V14H21V22H17Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </li>
+                  <li><a href="#">Increase tips</a></li>
+                  <li><a href="#">Enhance Staff Efficiency</a></li>
+                  <li><a href="#">Business Analytics</a></li>
+                </ul>
+                <!-- section end -->
+                <!-- section start -->
+                <ul>
+                  <li class="parent">
+                    Customer Engagement
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.8"
+                        d="M18.72 14.76C19.07 13.91 19.26 13 19.26 12C19.26 11.28 19.15 10.59 18.96 9.95C18.31 10.1 17.63 10.18 16.92 10.18C13.86 10.18 11.15 8.67 9.5 6.34C8.61 8.5 6.91 10.26 4.77 11.22C4.73 11.47 4.73 11.74 4.73 12C4.73 13.9281 5.49594 15.7773 6.85933 17.1407C8.22272 18.5041 10.0719 19.27 12 19.27C13.05 19.27 14.06 19.04 14.97 18.63C15.54 19.72 15.8 20.26 15.78 20.26C14.14 20.81 12.87 21.08 12 21.08C9.58 21.08 7.27 20.13 5.57 18.42C4.53 17.38 3.76 16.11 3.33 14.73H2V10.18H3.09C3.93 6.04 7.6 2.92 12 2.92C14.4 2.92 16.71 3.87 18.42 5.58C19.69 6.84 20.54 8.45 20.89 10.18H22V14.67V14.69V14.73H21.94L18.38 18L13.08 17.4V15.73H17.91L18.72 14.76ZM9.27 11.77C9.57 11.77 9.86 11.89 10.07 12.11C10.28 12.32 10.4 12.61 10.4 12.91C10.4 13.21 10.28 13.5 10.07 13.71C9.86 13.92 9.57 14.04 9.27 14.04C8.64 14.04 8.13 13.54 8.13 12.91C8.13 12.28 8.64 11.77 9.27 11.77ZM14.72 11.77C15.35 11.77 15.85 12.28 15.85 12.91C15.85 13.54 15.35 14.04 14.72 14.04C14.09 14.04 13.58 13.54 13.58 12.91C13.58 12.6077 13.7001 12.3177 13.9139 12.1039C14.1277 11.8901 14.4177 11.77 14.72 11.77Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </li>
+                  <li><a href="#">Videri Digital Signage</a></li>
+                  <li><a href="#">Loyalty Programs</a></li>
+                  <li><a href="#">Guest Insights</a></li>
+                </ul>
+                <!-- section end -->
+              </div>
+            </li>
+            <li class="has-mega-menu-m">
+              <a
+                href="#"
+                class="mega-menu-trigger-m"
+                data-target="mega-menu-two-m"
+              >
+                Businesses We Empower
+                <svg
+                  width="13"
+                  height="8"
+                  viewBox="0 0 13 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.91 -0.000161692L12.97 1.06084L7.193 6.83984C7.10043 6.93299 6.99036 7.00692 6.86911 7.05737C6.74786 7.10782 6.61783 7.13379 6.4865 7.13379C6.35517 7.13379 6.22514 7.10782 6.10389 7.05737C5.98264 7.00692 5.87257 6.93299 5.78 6.83984L-2.65457e-07 1.06084L1.06 0.00083871L6.485 5.42484L11.91 -0.000161692Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <!-- mega menu -->
+              <div class="mega-menu-two-m" id="mega-menu-two-m">
+                <!-- section start -->
+                <ul>
+                  <li class="icon-parent">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.6">
+                        <path
+                          d="M1 22C1 22.54 1.45 23 2 23H15C15.56 23 16 22.54 16 22V21H1V22ZM8.5 9C4.75 9 1 11 1 15H16C16 11 12.25 9 8.5 9ZM3.62 13C4.73 11.45 7.09 11 8.5 11C9.91 11 12.27 11.45 13.38 13H3.62ZM1 17H16V19H1V17ZM18 5V1H16V5H11L11.23 7H20.79L19.39 21H18V23H19.72C20.56 23 21.25 22.35 21.35 21.53L23 5H18Z"
+                          fill="black"
+                        />
+                      </g>
+                    </svg>
+                    <span>
+                      Food Services & Hospitality
+                      <p>Streamline ordering, payment, and guest feedback.</p>
+                    </span>
+                  </li>
+                  <li class="icon-parent">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.6">
+                        <path
+                          d="M5.06 3C4.63 3 4.22 3.14 3.84 3.42C3.46 3.7 3.24 4.06 3.14 4.5L2.11 8.91C1.86 10 2.06 10.95 2.72 11.77L3 12.05V19C3 19.5 3.2 20 3.61 20.39C4.02 20.78 4.5 21 5 21H19C19.5 21 20 20.8 20.39 20.39C20.78 19.98 21 19.5 21 19V12.05L21.28 11.77C21.94 10.95 22.14 10 21.89 8.91L20.86 4.5C20.73 4.06 20.5 3.7 20.13 3.42C19.77 3.14 19.38 3 18.94 3H5.06ZM18.89 4.97L19.97 9.38C20.06 9.81 19.97 10.2 19.69 10.55C19.44 10.86 19.13 11 18.75 11C18.44 11 18.17 10.9 17.95 10.66C17.73 10.43 17.61 10.16 17.58 9.84L16.97 5L18.89 4.97ZM5.06 5H7.03L6.42 9.84C6.3 10.63 5.91 11 5.25 11C4.84 11 4.53 10.86 4.31 10.55C4.03 10.2 3.94 9.81 4.03 9.38L5.06 5ZM9.05 5H11V9.7C11 10.05 10.89 10.35 10.64 10.62C10.39 10.88 10.08 11 9.7 11C9.36 11 9.07 10.88 8.84 10.59C8.61 10.3 8.5 10 8.5 9.66V9.5L9.05 5ZM13 5H14.95L15.5 9.5C15.58 9.92 15.5 10.27 15.21 10.57C14.95 10.87 14.61 11 14.2 11C13.89 11 13.61 10.88 13.36 10.62C13.11 10.35 13 10.05 13 9.7V5ZM7.45 12.05C8.08 12.67 8.86 13 9.8 13C10.64 13 11.38 12.67 12 12.05C12.69 12.67 13.45 13 14.3 13C15.17 13 15.92 12.67 16.55 12.05C17.11 12.67 17.86 13 18.8 13H19.03V19H5V13H5.25C6.16 13 6.89 12.67 7.45 12.05Z"
+                          fill="black"
+                        />
+                      </g>
+                    </svg>
+
+                    <span>
+                      Retail & Commerce
+                      <p>
+                        Sync sales, and loyalty across online and in‑store
+                        channels.
+                      </p>
+                    </span>
+                  </li>
+                  <li class="icon-parent">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.6">
+                        <path
+                          d="M19 11H13V5H19M19 19H13V13H19M11 11H5V5H11M11 19H5V13H11M3 21H21V3H3V21Z"
+                          fill="black"
+                        />
+                      </g>
+                    </svg>
+
+                    <span>
+                      Wholesale & Distribution
+                      <p>
+                        Track bulk orders, stock, and logistics in real time.
+                      </p>
+                    </span>
+                  </li>
+                </ul>
+                <!-- section end -->
+                <!-- section start -->
+                <ul>
+                  <li class="icon-parent">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.6">
+                        <path
+                          d="M12 5C12.5304 5 13.0391 5.21071 13.4142 5.58579C13.7893 5.96086 14 6.46957 14 7C14 7.24 13.96 7.47 13.88 7.69C17.95 8.5 21 11.91 21 16H3C3 11.91 6.05 8.5 10.12 7.69C10.04 7.47 10 7.24 10 7C10 6.46957 10.2107 5.96086 10.5858 5.58579C10.9609 5.21071 11.4696 5 12 5ZM22 19H2V17H22V19ZM12 9.5C8.89 9.5 6.25 11.39 5.34 14H18.66C17.75 11.39 15.11 9.5 12 9.5Z"
+                          fill="black"
+                        />
+                      </g>
+                    </svg>
+
+                    <span>
+                      Professional Services
+                      <p>
+                        Automate bookings, invoicing, and follow‑ups in one
+                        place.
+                      </p>
+                    </span>
+                  </li>
+                  <li class="icon-parent">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.6">
+                        <path
+                          d="M19 12V21H5V12C5 9.24 7.24 7 10 7V5H9V4H15V5H14V7C16.76 7 19 9.24 19 12ZM17 12C17 10.35 15.65 9 14 9H10C8.35 9 7 10.35 7 12V19H17V12ZM15 15H13V17H11V15H9V13H11V11H13V13H15V15Z"
+                          fill="black"
+                        />
+                      </g>
+                    </svg>
+
+                    <span>
+                      Health & Wellness
+                      <p>
+                        Handle appointments, memberships, and progress tracking
+                        effortlessly.
+                      </p>
+                    </span>
+                  </li>
+                  <li class="icon-parent">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.6">
+                        <path
+                          d="M4 4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V10C2.53043 10 3.03914 10.2107 3.41421 10.5858C3.78929 10.9609 4 11.4696 4 12C4 12.5304 3.78929 13.0391 3.41421 13.4142C3.03914 13.7893 2.53043 14 2 14V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V14C21.4696 14 20.9609 13.7893 20.5858 13.4142C20.2107 13.0391 20 12.5304 20 12C20 11.4696 20.2107 10.9609 20.5858 10.5858C20.9609 10.2107 21.4696 10 22 10V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4H4ZM4 6H20V8.54C18.76 9.25 18 10.57 18 12C18 13.43 18.76 14.75 20 15.46V18H4V15.46C5.24 14.75 6 13.43 6 12C6 10.57 5.24 9.25 4 8.54V6Z"
+                          fill="black"
+                        />
+                      </g>
+                    </svg>
+
+                    <span>
+                      Events, Entertainment & Ticketing
+                      <p>
+                        Sell tickets and manage attendees from presale to
+                        check‑in.
+                      </p>
+                    </span>
+                  </li>
+                </ul>
+                <!-- section end -->
+              </div>
+            </li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- last button -->
+        <div class="cnt-btn-mob">
+          <a href="#">
+            <button class="btn-red-inv w-100">Contact Sales</button>
+          </a>
         </div>
       </div>
     </label>

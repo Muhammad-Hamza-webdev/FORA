@@ -14,6 +14,10 @@ li {
   list-style: none;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 /* Header start =============================================================== */
 .header {
   display: flex;
@@ -57,6 +61,32 @@ li {
 .navbar ul li a:hover svg path {
   fill: #ca262b;
 }
+
+/* mobile navbar */
+.navbar-m {
+  margin-top: 20px;
+}
+.navbar-m ul {
+}
+.navbar-m > ul > li {
+  padding: 18px 35px;
+}
+.navbar-m ul li a {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  gap: 10px;
+  color: #000000;
+  align-items: center;
+}
+.navbar-m ul li a:hover {
+  color: #ca262b;
+}
+.navbar-m ul li a:hover svg path {
+  fill: #ca262b;
+}
+
 /* mega menu */
 .mega-menu {
   position: fixed;
@@ -76,6 +106,17 @@ li {
   justify-content: space-between;
 }
 
+.mega-menu-m {
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .parent {
   color: #333333;
   font-family: "DM Sans", sans-serif;
@@ -86,11 +127,14 @@ li {
   align-items: center;
 }
 
-.mega-menu ul {
+.mega-menu ul,
+.mega-menu-m ul {
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
+  display: flex;
 }
-.mega-menu ul li a {
+.mega-menu ul li a,
+.mega-menu-m ul li a {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -110,6 +154,23 @@ li {
   top: 110px;
 }
 
+.mega-menu-two-m {
+  margin: 20px 0 0 0;
+  padding: 10px 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+.mega-menu-two-m > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .mega-menu-two.active {
   display: flex;
   justify-content: space-around;
@@ -126,10 +187,28 @@ li {
   color: #666666;
 }
 
+/* Hide mega menus by default */
+.mega-menu-m,
+.mega-menu-two-m {
+  display: none;
+}
+
+/* Show when active */
+.mega-menu-m.active,
+.mega-menu-two-m.active {
+  display: flex;
+}
+
 .icon-parent {
   display: flex;
   gap: 20px;
 }
+
+#mega-menu-two-m .icon-parent {
+  display: flex;
+  gap: 10px;
+}
+
 .icon-parent span {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
@@ -141,6 +220,10 @@ li {
   font-weight: 400;
   font-size: 16px;
   color: #666666;
+}
+
+#mega-menu-two-m .icon-parent svg {
+  width: 40px;
 }
 
 /* Buttons and other styles remain the same */
@@ -183,6 +266,24 @@ li {
   color: #000000;
   border: 1px solid #dddddd;
   background-color: #dddddd;
+  transition: all 0.3s ease;
+}
+.btn-black {
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 13px 30px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+.btn-black:hover {
+  color: #ca262b;
+  border: 1px solid #ca262b;
+  background-color: #ffffff;
   transition: all 0.3s ease;
 }
 
@@ -295,4 +396,15 @@ body:has(#mobile-menu:checked) .mobl-menu {
 .close-btn:hover {
   background-color: #5c5a5a;
   transition: all 0.3s ease;
+}
+
+.lang-mobile {
+  padding: 20px 35px 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cnt-btn-mob {
+  padding: 20px 35px 20px 35px;
 }
