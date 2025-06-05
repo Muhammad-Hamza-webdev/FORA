@@ -54,21 +54,25 @@ document.addEventListener("DOMContentLoaded", function () {
       // Check if the clicked menu is already active
       const isActive = targetMenu.classList.contains("active");
 
-      // Close all mega menus first
+      // Close all mega menus and remove active-parent class from all triggers first
       document
         .querySelectorAll(".mega-menu-m, .mega-menu-two-m")
         .forEach((menu) => {
           menu.classList.remove("active");
         });
+      document.querySelectorAll(".mega-menu-trigger-m").forEach((trigger) => {
+        trigger.classList.remove("active-parent");
+      });
 
-      // If the clicked menu wasn't active, open it
+      // If the clicked menu wasn't active, open it and add active-parent class to trigger
       if (!isActive) {
         targetMenu.classList.add("active");
+        this.classList.add("active-parent");
       }
     });
   });
 
-  // Close menus when clicking outside
+  // Close menus and remove active-parent class from triggers when clicking outside
   document.addEventListener("click", function (e) {
     if (!e.target.closest(".has-mega-menu-m")) {
       document
@@ -76,6 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
         .forEach((menu) => {
           menu.classList.remove("active");
         });
+      document.querySelectorAll(".mega-menu-trigger-m").forEach((trigger) => {
+        trigger.classList.remove("active-parent");
+      });
     }
   });
 });
