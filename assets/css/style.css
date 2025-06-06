@@ -26,11 +26,11 @@ li {
   display: flex;
   justify-content: center;
   background-color: #080202;
-  padding: 30px 0 0 0;
+  padding: 30px 0;
   position: relative;
 }
 .container {
-  width: 96%;
+  width: 90%;
   max-width: 1600px;
 }
 .header-inner-container {
@@ -450,6 +450,7 @@ body:has(#mobile-menu:checked) .mobl-menu {
 
 /* footer ========================================================================= */
 .footer {
+  padding: 60px 0 0 0;
   display: flex;
   justify-content: center;
   background-color: #080202;

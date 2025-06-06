@@ -8,6 +8,9 @@
 /* 1600px */
 /* ================================================================== */
 @media (max-width: 1600px) {
+  .hero-section {
+    background-position: 550px 100px;
+  }
   .inner-footer-container {
     justify-content: space-between;
   }
@@ -24,6 +27,9 @@
   .mega-menu-two {
     left: calc(50% - 650px);
     top: 110px;
+  }
+  .hero-section {
+    background-position: 420px 70px;
   }
 }
 
@@ -50,21 +56,47 @@
   .language-options div:hover {
     background-color: #cccccc;
   }
+  .hero-section {
+    background-position: 270px 50px;
+  }
+  .info-hero {
+    padding-right: 0;
+  }
 }
 
 /* ================================================================== */
 /* 1024px */
 /* ================================================================== */
 @media (max-width: 1024px) {
+  .hero-section {
+    background-position: 170px 100px;
+  }
+  .inner-hero div h1 {
+    font-size: 62px;
+  }
 }
 
 /* ================================================================== */
 /* 850px */
 /* ================================================================== */
 @media (max-width: 850px) {
+  .col-6 {
+    width: unset;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .hero-section {
+    background-position: -380px 210px;
+    background-size: cover;
+  }
+  .inner-hero div h1 {
+    font-size: 52px;
+  }
   .inner-footer-container {
     justify-content: start;
   }
+
   .w-20 {
     width: 33%;
   }
@@ -82,6 +114,29 @@
   }
   .mobl-menu {
     width: 100%;
+  }
+  .inner-hero {
+    gap: 40px;
+  }
+  .info-hero {
+    gap: 20px;
+  }
+  .inner-hero div h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .inner-hero div span {
+    font-size: 16px;
+  }
+  .hero-img img {
+    width: 100%;
+  }
+  .hero-section {
+    background-position: -270px 310px;
+    background-size: 900px;
+  }
+  .marquee img {
+    width: 140px;
   }
   .inner-footer-container {
     padding: 40px 20px 0 20px;

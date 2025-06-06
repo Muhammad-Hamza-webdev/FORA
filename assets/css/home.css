@@ -1,0 +1,64 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #080202;
+  align-items: center;
+  background-image: url("../img/Blur-red-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 70px;
+  background-size: contain;
+}
+.inner-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  flex-wrap: wrap;
+}
+.inner-hero div h1 {
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+}
+.inner-hero div h1 span {
+  color: #ca262b;
+  font-size: 72px;
+}
+.inner-hero div span {
+  color: #ca262b;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+.info-hero {
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero-img {
+  display: flex;
+  justify-content: center;
+}
+.col-6 {
+  width: 50%;
+}
+
+.marquee-container {
+  padding: 60px 0;
+  width: 100%;
+  opacity: 0.5;
+  overflow: hidden;
+  position: relative;
+}
+.marquee {
+  display: flex;
+  width: max-content;
+  gap: 40px;
+}
+.marquee img {
+  width: 170px;
+  height: auto;
+  flex-shrink: 0;
+}
