@@ -41,6 +41,7 @@
   .text {
     gap: 30px;
   }
+
   .inner-form-container {
     padding: 1% 29% 1% 29%;
   }
@@ -79,6 +80,9 @@
   .p-80 {
     padding-top: 60px;
   }
+  .mrg-left {
+    margin-left: 5vw;
+  }
   .text-box h2 {
     font-size: 54px;
   }
@@ -105,6 +109,10 @@
   }
   .title h1 {
     font-size: 56px;
+  }
+
+  .testmoni-card {
+    min-width: max-content;
   }
   .inner-form-container {
     padding: 1% 25%;
@@ -189,6 +197,12 @@
   .title h1 {
     font-size: 50px;
   }
+  .ser-icon-card {
+    gap: 40px;
+  }
+  .icon-box {
+    width: 48%;
+  }
   .inner-form-container {
     padding: 1% 22%;
   }
@@ -237,6 +251,9 @@
     width: 100%;
     padding: 60px 0 0 0;
   }
+  .icon-box {
+    width: 47%;
+  }
   .inner-form-container {
     padding: 1% 17%;
   }
@@ -282,6 +299,28 @@
   }
   .m-20 {
     margin-top: 30px;
+  }
+  .p-left {
+    padding-left: 0;
+  }
+  .left-container-box {
+    width: 100%;
+  }
+  .right-container-box {
+    width: 100%;
+    padding: 60px 0 0 0;
+    justify-content: center;
+  }
+  .right-container-box-inv {
+    width: 100%;
+    padding: 60px 0 0 0;
+    justify-content: center;
+  }
+  .flex-rev {
+    flex-direction: column-reverse;
+  }
+  .inner-ben-sev h2 {
+    font-size: 54px;
   }
   .inner-form-container {
     padding: 1% 9%;
@@ -397,6 +436,30 @@
   }
   .m-20 {
     margin-top: 0;
+  }
+  .left-container-box h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .left-container-box p {
+    font-size: 18px;
+  }
+  .right-container-box,
+  .right-container-box-inv {
+    padding: 40px 0 0 0;
+  }
+  .right-container-box img,
+  .right-container-box-inv img {
+    width: 100%;
+  }
+  .inner-ben-sev h2 {
+    font-size: 38px;
+  }
+  .icon-box {
+    width: 100%;
+  }
+  .text-center {
+    text-align: start;
   }
   .social-links {
     justify-content: space-around;

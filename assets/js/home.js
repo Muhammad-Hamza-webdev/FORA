@@ -50,7 +50,61 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// counter code
+// marquee second =====================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+  const scroller = document.querySelector(".logo-scroller");
+  const images = document.querySelectorAll(".logo-scroller img");
+  const container = document.querySelector(".logo-scroller-container");
+
+  // Clone all images for seamless looping
+  const cloneGroup = scroller.cloneNode(true);
+  scroller.appendChild(cloneGroup);
+
+  // Calculate total width of original images
+  let totalWidth = 0;
+  images.forEach((img) => {
+    totalWidth += img.offsetWidth;
+  });
+
+  // Set animation duration based on width and desired speed
+  const pixelsPerSecond = 50; // Adjust this for speed control
+  const duration = totalWidth / pixelsPerSecond;
+
+  // Create the animation
+  const tl = gsap.timeline({ repeat: -1 });
+
+  // Animate the scroller
+  tl.to(scroller, {
+    x: -totalWidth,
+    duration: duration,
+    ease: "none",
+    modifiers: {
+      x: gsap.utils.unitize((x) => parseFloat(x) % totalWidth),
+    },
+  });
+
+  // Handle window resize
+  let resizeTimer;
+  window.addEventListener("resize", function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(initScroller, 100);
+  });
+
+  function initScroller() {
+    // Recalculate width on resize
+    totalWidth = 0;
+    images.forEach((img) => {
+      totalWidth += img.offsetWidth;
+    });
+
+    // Reset position and restart animation
+    gsap.set(scroller, { x: 0 });
+    tl.restart();
+  }
+});
+
+// counter code ==============================================================================
 
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".count");
