@@ -13,14 +13,31 @@ a {
 li {
   list-style: none;
 }
-
-.w-100 {
-  width: 100%;
+.w-50 {
+  width: unset;
+}
+.w-full {
+  width: unset;
 }
 .w-20 {
   width: 20%;
 }
+.w-25 {
+  width: 24.06%;
+}
+.w-33 {
+  width: 32.5%;
+}
 
+.w-100 {
+  width: 100%;
+}
+.p-80 {
+  padding-top: 80px;
+}
+.w-400px {
+  width: 400px;
+}
 /* Header start =============================================================== */
 .header {
   display: flex;
