@@ -44,6 +44,13 @@
   .ben-services {
     padding: 80px 0 80px 0;
   }
+  .testmoni-warp,
+  .news-card-warp {
+    max-width: 95%;
+  }
+  .text-black {
+    width: 95%;
+  }
   .inner-form-container {
     padding: 1% 29% 1% 29%;
   }
@@ -85,7 +92,8 @@
   .mrg-left {
     margin-left: 5vw;
   }
-  .text-box h2 {
+  .text-box h2,
+  .text-box-b h2 {
     font-size: 54px;
   }
   .text-box-2 h2 {
@@ -114,6 +122,13 @@
   }
   .ben-services {
     padding: 80px 0 60px 0;
+  }
+  .text-black {
+    width: 90%;
+  }
+  .testmoni-warp,
+  .news-card-warp {
+    max-width: 100%;
   }
   .testmoni-card,
   .news-card {
@@ -170,10 +185,12 @@
   .counter-box span {
     font-size: 18px;
   }
-  .text-box h2 {
+  .text-box h2,
+  .text-box-b h2 {
     font-size: 44px;
   }
-  .text-box span {
+  .text-box span,
+  .text-box-b span {
     font-size: 18px;
   }
   .text-box-2 h2 {
@@ -208,6 +225,9 @@
   }
   .icon-box {
     width: 48%;
+  }
+  .text-flex {
+    padding: 50px 0 0 0;
   }
   .inner-form-container {
     padding: 1% 22%;
@@ -331,6 +351,9 @@
   .flex-rev {
     flex-direction: column-reverse;
   }
+  .text-flex {
+    width: 90%;
+  }
   .inner-ben-sev h2,
   .text-black h2 {
     font-size: 54px;
@@ -374,7 +397,7 @@
     width: 140px;
   }
   .inner-footer-container {
-    padding: 40px 20px 0 20px;
+    padding: 40px 10px 0 10px;
     gap: 20px;
   }
   .w-20 {
@@ -401,15 +424,23 @@
   .inner-copyright {
     margin: 30px -20px 0 -20px;
   }
-  .text-box h2 {
+  .text-box h2,
+  .text-box-b h2 {
     font-size: 36px;
   }
   .text-box-3 {
     text-align: center;
   }
+  .text-flex {
+    width: 100%;
+  }
+  .form-section {
+    padding: 20px 0 60px 0;
+  }
   .text-box span,
   .text-box-2 span,
-  .text-box-3 span {
+  .text-box-3 span,
+  .text-box-b span {
     font-size: 16px;
   }
   .reg,
