@@ -29,7 +29,21 @@
   .review {
     padding: 290px 100px 30px 30px;
   }
-
+  .form {
+    background-position: -130px 350px;
+  }
+  .title h1 {
+    font-size: 58px;
+  }
+  .title p {
+    font-size: 18px;
+  }
+  .text {
+    gap: 30px;
+  }
+  .inner-form-container {
+    padding: 1% 29% 1% 29%;
+  }
   .inner-footer-container {
     justify-content: space-between;
   }
@@ -59,7 +73,7 @@
   .w-400px {
     width: 300px;
   }
-  .logo {
+  .logo-s {
     padding: 50px 0;
   }
   .p-80 {
@@ -85,6 +99,16 @@
   }
   .review {
     padding: 290px 50px 30px 30px;
+  }
+  .left-container {
+    padding: 0 5% 0 0;
+  }
+  .title h1 {
+    font-size: 56px;
+  }
+  .inner-form-container {
+    padding: 1% 25%;
+    gap: 50px;
   }
 }
 
@@ -162,6 +186,12 @@
   .review {
     padding: 200px 30px 30px 30px;
   }
+  .title h1 {
+    font-size: 50px;
+  }
+  .inner-form-container {
+    padding: 1% 22%;
+  }
 }
 
 /* ================================================================== */
@@ -180,15 +210,35 @@
   .w-400px {
     width: 230px;
   }
-  .logo {
+  .logo-s {
     padding: 40px 0;
   }
   .p-80 {
     padding-top: 40px;
   }
-
   .inner-hero div h1 {
     font-size: 62px;
+  }
+  .form {
+    padding: 20px 0;
+    background-position: -800px 610px;
+  }
+  .left-container {
+    width: 100%;
+    padding: 0;
+  }
+  .title h1 {
+    line-height: 50px;
+  }
+  .text {
+    padding: 50px 0 0 0;
+  }
+  .right-container {
+    width: 100%;
+    padding: 60px 0 0 0;
+  }
+  .inner-form-container {
+    padding: 1% 17%;
   }
 }
 
@@ -221,7 +271,7 @@
   .w-50 {
     width: 48.5%;
   }
-  .logo {
+  .logo-s {
     padding: 30px 0;
   }
   .p-80 {
@@ -232,6 +282,9 @@
   }
   .m-20 {
     margin-top: 30px;
+  }
+  .inner-form-container {
+    padding: 1% 9%;
   }
 }
 
@@ -278,7 +331,7 @@
   .w-50 {
     width: 100%;
   }
-  .logo {
+  .logo-s {
     padding: 30px 0;
   }
   .counter-box h2 {
@@ -318,7 +371,30 @@
     display: flex;
     justify-content: center;
   }
-
+  .form {
+    padding: 20px 0 40px 0;
+    background-position: -990px 540px;
+    background-size: cover;
+  }
+  .title h1 {
+    font-size: 42px;
+  }
+  .title p {
+    font-size: 16px;
+  }
+  .p-text {
+    font-size: 16px;
+  }
+  .inner-form-container {
+    padding: 2% 0%;
+    gap: 30px;
+  }
+  .inner-form-container h2 {
+    text-align: start;
+  }
+  .inner-form-container img {
+    width: 100%;
+  }
   .m-20 {
     margin-top: 0;
   }

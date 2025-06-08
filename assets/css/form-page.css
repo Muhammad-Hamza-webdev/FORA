@@ -1,0 +1,90 @@
+.form {
+  background-color: #080202;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  background-image: url("../img/form-page.webp");
+  background-position: -100px 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.inner-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10% 0 0;
+}
+.right-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.title h1 {
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 64px;
+}
+.title h1 span {
+  color: #ca262b;
+  font-size: 64px;
+}
+.title p {
+  font-family: "DM Sans", sans-serif;
+  color: #9c9a9a;
+  font-weight: 400;
+  font-size: 22px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.text-box h2 {
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 64px;
+}
+.text-box span {
+  font-family: "DM Sans", sans-serif;
+  color: #9c9a9a;
+  font-weight: 400;
+  font-size: 20px;
+}
+.p-text {
+  font-family: "DM Sans", sans-serif;
+  color: #9c9a9a;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* inner form */
+.inner-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+  padding: 1% 30% 10% 30%;
+}
+.inner-form-container h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+}
+.inner-form-container img {
+  width: 400px;
+}
