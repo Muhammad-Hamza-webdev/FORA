@@ -510,13 +510,13 @@
   flex-direction: column;
   gap: 20px;
 }
-.title h1 {
+.title h2 {
   font-family: "DM Sans", sans-serif;
   color: #080202;
   font-weight: 400;
   font-size: 64px;
 }
-.title h1 span {
+.title h2 span {
   color: #ca262b;
   font-size: 64px;
 }
