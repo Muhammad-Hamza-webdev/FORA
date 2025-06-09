@@ -143,8 +143,6 @@
   justify-content: center;
   padding: 40px 0 80px 0;
 }
-.inner-slider-ad-all-card {
-}
 
 .slider-prod-card {
   background-color: #ffffff;
@@ -364,69 +362,69 @@
 }
 
 /* client about */
-.client-about{
-    background-color: #080202;
-    display: flex;
-    justify-content: center;
-    padding: 80px 0;
+.client-about {
+  background-color: #080202;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
 }
-.clients-card{
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    flex-wrap: wrap;
+.clients-card {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.left-client-img{
-    width: 47%;
+.left-client-img {
+  width: 47%;
 }
-.left-client-img img{
-    width: 100%;
-    border-radius: 4px;
+.left-client-img img {
+  width: 100%;
+  border-radius: 4px;
 }
-.right-client-info{
-    width: 47%;
-    display: flex;
+.right-client-info {
+  width: 47%;
+  display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.right-client-info p{
+.right-client-info p {
   font-family: "DM Sans", sans-serif;
-font-weight: 400;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0%;
-color: #FFFFFF;
-line-height: 26px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  line-height: 26px;
 }
-.client-name{
-    display: flex;
+.client-name {
+  display: flex;
   gap: 30px;
 }
-.client-name h6{
+.client-name h6 {
   font-family: "DM Sans", sans-serif;
-font-weight: 500;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0%;
-color: #CECCCC;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #cecccc;
 }
-.client-name span{
+.client-name span {
   font-family: "DM Sans", sans-serif;
-font-weight: 400;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 0%;
-color: #CA262B;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ca262b;
 }
-.gap-90{
-    gap: 91%;
+.gap-90 {
+  gap: 91%;
 }
 .clients-card {
-    display: none;
+  display: none;
 }
 
 .clients-card.active {
-    display: flex;
+  display: flex;
 }
 
 .btn-ctrl-trs-1 {
@@ -449,4 +447,96 @@ color: #CA262B;
 .prev-btn-trs-1:hover {
   transition: all 0.3s ease;
   background-color: transparent;
+}
+
+/* faqs */
+.faqs {
+  background-color: #080202;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.fix-width {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-faqs {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.inner-faqs h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 80px;
+}
+
+.accordion {
+  margin-bottom: 16px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #211b1b;
+}
+
+.accordion-toggle {
+  display: none;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.accordion-title h3 {
+  color: #c8c7c7;
+  font-family: "REM", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.accordion-title svg {
+  transition: transform 0.3s ease;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 30px;
+}
+
+.content p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+  margin: 0;
+  padding: 0 0 20px 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.accordion-toggle:checked + .accordion-title svg {
+  transform: rotate(180deg);
+}
+
+.accordion-toggle:checked ~ .content {
+  max-height: 1000px;
+}
+
+.accordion-toggle:checked ~ .content p {
+  opacity: 1;
+  padding: 0 0 20px 0;
 }

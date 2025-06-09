@@ -125,32 +125,32 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // client about us =======================================================
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all elements
-    const clientCards = document.querySelectorAll('.clients-card');
-    const nextBtn = document.querySelector('.nxt-btn-trs-1');
-    const prevBtn = document.querySelector('.prev-btn-trs-1');
-    let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all elements
+  const clientCards = document.querySelectorAll(".clients-card");
+  const nextBtn = document.querySelector(".nxt-btn-trs-1");
+  const prevBtn = document.querySelector(".prev-btn-trs-1");
+  let currentIndex = 0;
 
-    // Function to show specific card
-    function showClientCard(index) {
-        clientCards.forEach((card, i) => {
-            card.classList.toggle('active', i === index);
-        });
-    }
-
-    // Next button click handler
-    nextBtn.addEventListener('click', function() {
-        currentIndex = (currentIndex + 1) % clientCards.length;
-        showClientCard(currentIndex);
+  // Function to show specific card
+  function showClientCard(index) {
+    clientCards.forEach((card, i) => {
+      card.classList.toggle("active", i === index);
     });
+  }
 
-    // Previous button click handler
-    prevBtn.addEventListener('click', function() {
-        currentIndex = (currentIndex - 1 + clientCards.length) % clientCards.length;
-        showClientCard(currentIndex);
-    });
+  // Next button click handler
+  nextBtn.addEventListener("click", function () {
+    currentIndex = (currentIndex + 1) % clientCards.length;
+    showClientCard(currentIndex);
+  });
 
-    // Initialize by showing the first card
-    showClientCard(0);
+  // Previous button click handler
+  prevBtn.addEventListener("click", function () {
+    currentIndex = (currentIndex - 1 + clientCards.length) % clientCards.length;
+    showClientCard(currentIndex);
+  });
+
+  // Initialize by showing the first card
+  showClientCard(0);
 });
