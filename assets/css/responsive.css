@@ -79,6 +79,21 @@
   .left-technical-dtl img {
     height: 490px;
   }
+  .w-60 {
+  width: 66%;
+}
+.client-name h6 {
+  font-size: 22px;
+}
+.client-name span {
+  font-size: 22px;
+}
+.right-client-info {
+  gap: 30px;
+}
+.right-client-info p {
+  font-size: 20px;
+}
 }
 
 /* ================================================================== */
@@ -207,6 +222,9 @@
   }
   .left-technical-dtl img {
     height: 420px;
+  }
+  .clients-card {
+  gap: 50px;
   }
 }
 
@@ -350,6 +368,12 @@
   .left-technical-dtl img {
     height: 380px;
   }
+  .w-60 {
+    width: 90%;
+  }
+  .client-about {
+  padding: 60px 0;
+}
 }
 
 /* ================================================================== */
@@ -448,6 +472,19 @@
   .technical-dtl {
     background-position: -20px -30px;
     background-size: 60%;
+  }
+  .gap-90 {
+  gap: 66%;
+}
+.right-client-info p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+   .client-name h6 {
+    font-size: 20px;
+  }
+  .client-name span {
+    font-size: 20px;
   }
 }
 
@@ -596,6 +633,15 @@
     padding: 0;
   }
   .right-technical-dtl ul li {
+    font-size: 16px;
+  }
+  .client-about {
+  padding: 30px 0;
+}
+   .clients-card {
+    gap: 40px;
+  }
+    .right-client-info p {
     font-size: 16px;
   }
 }
@@ -860,7 +906,8 @@
     width: 100%;
   }
   .technical-dtl {
-    background-position: -120px 130px;
+    padding: 40px 0;
+    background-position: -120px 80px;
     background-size: cover;
   }
   .left-technical-dtl img {
@@ -880,4 +927,13 @@
     justify-content: center;
     padding: 40px 0 0 0;
   }
+  .left-client-img {
+  width: 100%;
+}
+ .client-about {
+    padding: 40px 0 60px 0;
+  }
+.right-client-info {
+  width: 100%;
+}
 }

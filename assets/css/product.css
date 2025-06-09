@@ -362,3 +362,91 @@
   transition: all 0.3s ease;
   background-color: transparent;
 }
+
+/* client about */
+.client-about{
+    background-color: #080202;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+.clients-card{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left-client-img{
+    width: 47%;
+}
+.left-client-img img{
+    width: 100%;
+    border-radius: 4px;
+}
+.right-client-info{
+    width: 47%;
+    display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.right-client-info p{
+  font-family: "DM Sans", sans-serif;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+line-height: 26px;
+}
+.client-name{
+    display: flex;
+  gap: 30px;
+}
+.client-name h6{
+  font-family: "DM Sans", sans-serif;
+font-weight: 500;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #CECCCC;
+}
+.client-name span{
+  font-family: "DM Sans", sans-serif;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #CA262B;
+}
+.gap-90{
+    gap: 91%;
+}
+.clients-card {
+    display: none;
+}
+
+.clients-card.active {
+    display: flex;
+}
+
+.btn-ctrl-trs-1 {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0 0;
+}
+.nxt-btn-trs-1,
+.prev-btn-trs-1 {
+  cursor: pointer;
+  background-color: #ffffff14;
+  padding: 16px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.nxt-btn-trs-1:hover,
+.prev-btn-trs-1:hover {
+  transition: all 0.3s ease;
+  background-color: transparent;
+}

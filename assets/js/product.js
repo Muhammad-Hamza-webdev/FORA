@@ -123,3 +123,34 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize first card
   showCard(0);
 });
+
+// client about us =======================================================
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all elements
+    const clientCards = document.querySelectorAll('.clients-card');
+    const nextBtn = document.querySelector('.nxt-btn-trs-1');
+    const prevBtn = document.querySelector('.prev-btn-trs-1');
+    let currentIndex = 0;
+
+    // Function to show specific card
+    function showClientCard(index) {
+        clientCards.forEach((card, i) => {
+            card.classList.toggle('active', i === index);
+        });
+    }
+
+    // Next button click handler
+    nextBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % clientCards.length;
+        showClientCard(currentIndex);
+    });
+
+    // Previous button click handler
+    prevBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + clientCards.length) % clientCards.length;
+        showClientCard(currentIndex);
+    });
+
+    // Initialize by showing the first card
+    showClientCard(0);
+});

@@ -28,7 +28,6 @@ li {
 .w-33 {
   width: 32.5%;
 }
-
 .w-100 {
   width: 100%;
 }
@@ -52,6 +51,9 @@ li {
 .container {
   width: 90%;
   max-width: 1600px;
+}
+.w-60{
+  width: 61%;
 }
 .scroll-container {
   width: 100%;
