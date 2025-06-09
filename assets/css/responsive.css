@@ -71,6 +71,14 @@
   .left-srvc-speed h2 {
   font-size: 68px;
 }
+.technical-dtl {
+  padding: 80px 0;
+  background-position: 110px -20px;
+    background-size: 45%;
+}
+.left-technical-dtl img {
+  height: 490px;
+}
 }
 
 /* ================================================================== */
@@ -187,6 +195,19 @@
   font-size: 16px;
   padding: 20px 0 40px 0;
 }
+  .technical-dtl {
+    background-position: 70px -10px;
+    background-size: 45%;
+  }
+.right-technical-dtl h2 {
+  font-size: 62px;
+}
+.right-technical-dtl ul li {
+  font-size: 18px;
+}
+ .left-technical-dtl img {
+    height: 420px;
+  }
 }
 
 /* ================================================================== */
@@ -319,6 +340,16 @@
   .left-srvc-speed p {
     padding: 20px 0 30px 0;
   }
+   .technical-dtl {
+    background-position: 40px -40px;
+    background-size: 50%;
+  }
+    .technical-dtl {
+    padding: 60px 0;
+    }
+      .left-technical-dtl img {
+    height: 380px;
+  }
 }
 
 /* ================================================================== */
@@ -404,6 +435,19 @@
   }
   .left-srvc-speed h2 {
     font-size: 46px;
+  }
+  .right-technical-dtl h2 {
+    font-size: 52px;
+  }
+  .right-technical-dtl ul {
+  padding: 20px 0 40px 20px;
+}
+  .left-technical-dtl img {
+  width: 55%;
+}
+  .technical-dtl {
+    background-position: -20px -30px;
+    background-size: 60%;
   }
 }
 
@@ -529,13 +573,31 @@
   }
   .right-srvc-speed {
   width: 100%;
-  padding: 40px 0 0 0;
+  padding: 80px 0 0 0;
   display: flex;
     justify-content: center;
 }
 .right-srvc-speed img {
   width: 60%;
 }
+.btn-ctrl-trs {
+  gap: 60%;
+}
+.right-technical-dtl h2 {
+    font-size: 44px;
+  }
+   .left-technical-dtl {
+    justify-content: start;
+  }
+   .left-technical-dtl img {
+    width: 70%;
+  }
+  .right-technical-dtl {
+  padding: 0;
+}
+.right-technical-dtl ul li {
+    font-size: 16px;
+  }
 }
 
 /* ================================================================== */
@@ -796,5 +858,26 @@
   }
    .right-srvc-speed img {
     width: 100%;
+  }
+   .technical-dtl {
+    background-position: -120px 130px;
+    background-size: cover;
+  }
+  .left-technical-dtl img {
+   width: 100%;
+  }
+  .inner-technical-dtl{
+    flex-direction: column-reverse;
+  }
+  .right-technical-dtl {
+  width: 100%;
+  }
+   .right-technical-dtl h2 {
+    font-size: 36px;
+  }
+  .left-technical-dtl {
+  width: 100%;
+  justify-content: center;
+  padding: 40px 0 0 0;
   }
 }

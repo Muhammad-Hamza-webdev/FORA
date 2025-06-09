@@ -97,3 +97,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Technical Details ===============================================
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.inner-technical-dtl');
+    const nextBtn = document.querySelector('.nxt-btn-trs');
+    const prevBtn = document.querySelector('.prev-btn-trs');
+    let currentIndex = 0;
+
+    function showCard(index) {
+        cards.forEach((card, i) => {
+            card.classList.toggle('active', i === index);
+        });
+    }
+
+    nextBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % cards.length;
+        showCard(currentIndex);
+    });
+
+    prevBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        showCard(currentIndex);
+    });
+
+    // Initialize first card
+    showCard(0);
+});

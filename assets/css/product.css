@@ -282,3 +282,84 @@
   width: 100%;
   border-radius: 4px;
 }
+
+/* technical-dtl */
+.technical-dtl{
+    background-color: #080202;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    background-image: url('../img/tilt-prod.svg');
+    background-repeat: no-repeat;
+  background-position: 140px 0px;
+  background-size: 40%;
+}
+.inner-technical-dtl{
+    display: flex;
+align-items: center;
+  flex-wrap: wrap;
+}
+.inner-technical-dtl {
+    display: none;
+}
+
+.inner-technical-dtl.active {
+    display: flex;
+}
+.left-technical-dtl{
+    width: 50%;
+    display: flex;
+  justify-content: center;
+}
+.left-technical-dtl img{
+width: 45%;
+border-radius: 4px;
+height: 540px;
+  object-fit: cover;
+}
+.right-technical-dtl{
+    width: 50%;
+    padding: 0 0 0 5%;
+}
+.right-technical-dtl h2{
+  font-family: "DM Sans", sans-serif;
+font-weight: 600;
+font-size: 72px;
+text-transform: capitalize;
+  color: #ffffff;
+}
+.right-technical-dtl ul
+{
+    padding: 20px 0 50px 20px;
+}
+.right-technical-dtl ul li{
+color: #9C9A9A;
+list-style: disc;
+  font-family: "DM Sans", sans-serif;
+font-weight: 500;
+font-size: 20px;
+margin-top: 3px;
+}
+
+.btn-ctrl-trs {
+  display: flex;
+  gap: 66%;
+  justify-content: center;
+  padding: 50px 0 0 0;
+}
+.nxt-btn-trs,
+.prev-btn-trs {
+  cursor: pointer;
+  background-color:  #FFFFFF14;
+  padding: 16px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.nxt-btn-trs:hover,
+.prev-btn-trs:hover {
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
