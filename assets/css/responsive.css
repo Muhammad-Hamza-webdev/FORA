@@ -57,6 +57,17 @@
   .inner-footer-container {
     justify-content: space-between;
   }
+  /* product page ================= */
+  .hero-section-prod{
+    background-position: 600px 10px;
+  }
+  .inner-hero-prod div h1 {
+  font-size: 69px;
+}
+.icon-box-prod {
+  width: 340px;
+  padding: 30px 60px;
+}
 }
 
 /* ================================================================== */
@@ -138,6 +149,24 @@
   .inner-form-container {
     padding: 1% 25%;
     gap: 50px;
+  }
+  /* product page ======================== */
+  .hero-section-prod {
+    background-position: 550px 40px;
+  }
+   .inner-hero-prod div h1 {
+    font-size: 58px;
+    line-height: 70px;
+  }
+  .marquee-container-prod {
+  padding: 80px 0 40px 0;
+  }
+  .inner-ben-sev-prod {
+  gap: 60px;
+}
+   .icon-box-prod {
+    width: 290px;
+    padding: 30px 30px;
   }
 }
 
@@ -232,6 +261,24 @@
   .inner-form-container {
     padding: 1% 22%;
   }
+  /* product page ========================== */
+   .hero-section-prod {
+    background-position: 500px 20px;
+  }
+   .inner-hero-prod div h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .inner-hero-prod div span {
+  font-size: 22px;
+  margin: 20px 0 36px 0;
+}
+.title-prod h2 {
+  font-size: 54px;
+}
+ .icon-box-prod {
+    width: 530px;
+  }
 }
 
 /* ================================================================== */
@@ -241,6 +288,9 @@
   .hero-section {
     background-position: 170px 100px;
   }
+  .inner-hero div span {
+  font-size: 22px;
+}
   .w-33 {
     width: 31.88%;
   }
@@ -282,6 +332,23 @@
   }
   .inner-form-container {
     padding: 1% 17%;
+  }
+  /* product page ============================ */
+    .hero-section-prod {
+    background-position: 400px 40px;
+  }
+  .inner-hero-prod div h1 {
+    font-size: 41px;
+    line-height: 50px;
+  }
+   .title-prod h2 {
+    font-size: 50px;
+  }
+  .inner-hero-prod div span {
+    font-size: 18px;
+  }
+   .icon-box-prod {
+    width: 450px;
   }
 }
 
@@ -363,6 +430,30 @@
   }
   .inner-info {
     gap: 80px;
+  }
+  /* product page =========================== */
+   .hero-section-prod {
+    background-position: 0px 280px;
+  }
+  .info-hero-prod {
+    padding-right: 0;
+  width: 100%;
+}
+.hero-img-prod {
+  width: 100%;
+  margin-top: 50px;
+}
+.hero-img-prod img {
+  width: 60%;
+}
+.title-prod h2 {
+    font-size: 48px;
+  }
+  .title-prod span {
+  font-size: 16px;
+}
+ .icon-box-prod {
+    width: 354px;
   }
 }
 
@@ -562,5 +653,35 @@
   }
   .copyright {
     padding: 0 20px;
+  }
+  /* product page ======================== */
+  .hero-section-prod {
+    background-position: -280px 170px;
+    background-size: 960px;
+  }
+   .inner-hero-prod div h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+   .inner-hero-prod div span {
+    font-size: 16px;
+  }
+  .p-lr{
+    padding: 13px 45px;
+  }
+  .hero-img-prod img {
+    width: 95%;
+  }
+  .ben-services-prod {
+  padding: 30px 0 40px 0;
+}
+  .title-prod h2 {
+    font-size: 36px;
+  }
+  .ser-icon-card-prod {
+  gap: 30px;
+  }
+   .icon-box-prod {
+    width: 100%;
   }
 }

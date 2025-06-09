@@ -31,12 +31,13 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 24px;
+  margin: 20px 0 40px 0;
 }
 .info-hero-prod {
   padding-right: 100px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  /* gap: 30px; */
   width: 60%;
 }
 .hero-img-prod {
@@ -49,33 +50,33 @@
   border-radius: 4px;
 }
 
-.marquee-container {
+.marquee-container-prod {
   padding: 80px 0;
   width: 100%;
   opacity: 0.5;
   overflow: hidden;
   position: relative;
 }
-.marquee {
+.marquee-prod {
   display: flex;
   width: max-content;
   gap: 40px;
 }
-.marquee img {
+.marquee-prod img {
   width: 170px;
   height: auto;
   flex-shrink: 0;
 }
 
 /* services */
-.ben-services {
+.ben-services-prod {
   background-color: #080202;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0 100px 0;
+  padding: 30px 0 100px 0;
 }
-.inner-ben-sev {
+.inner-ben-sev-prod {
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -100,87 +101,37 @@
   color: #ca262b;
 }
 
-.ser-icon-card {
+.ser-icon-card-prod {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
 }
-.icon-box {
-  width: 24%;
+.icon-box-prod {
+  border: 1px solid #3e0c0d;
+  background-color: #1b0606;
+  width: 380px;
   display: flex;
+  border-radius: 4px;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  padding: 30px 70px;
 }
-.icon-box svg {
+.icon-box-prod svg {
   width: 60px;
   height: 60px;
 }
-.icon-box h3 {
+.icon-box-prod h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: #ffffff;
 }
-.icon-box p {
+.icon-box-prod p {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
   color: #9c9999;
-}
-
-.text-center {
-  text-align: center;
-  width: 90%;
-}
-
-.testmoni-warp,
-.news-card-warp {
-  max-width: 100%;
-  overflow: auto;
-}
-
-.testmoni-card {
-  display: flex;
-  gap: 20px;
-}
-
-.testmoni-box {
-  background-color: #fefefe1a;
-  backdrop-filter: blur(50px);
-  border: 1px solid #747171;
-  border-radius: 4px;
-  width: 400px;
-  padding: 25px;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-}
-.rate {
-  display: flex;
-  justify-content: space-between;
-}
-.testmoni-text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.testmoni-text h4 {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #fefefe;
-}
-.testmoni-text span {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #ca262b;
-}
-.testmoni-text p {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: #a5a3a3;
 }

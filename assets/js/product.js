@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const marquee = document.querySelector(".marquee");
-  const images = document.querySelectorAll(".marquee img");
-  const container = document.querySelector(".marquee-container");
+  const marquee = document.querySelector(".marquee-prod");
+  const images = document.querySelectorAll(".marquee-prod img");
+  const container = document.querySelector(".marquee-container-prod");
 
   // Clone all images for seamless looping
   const cloneGroup = marquee.cloneNode(true);
