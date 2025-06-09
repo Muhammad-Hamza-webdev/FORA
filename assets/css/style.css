@@ -593,7 +593,7 @@ body:has(#mobile-menu:checked) .mobl-menu {
 .form-section {
   display: flex;
   justify-content: center;
-  padding: 20px 0 80px 0;
+  padding: 80px 0;
 }
 .inner-container {
   display: flex;
