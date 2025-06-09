@@ -361,6 +361,9 @@
   .inner-form-container {
     padding: 1% 9%;
   }
+  .inner-info {
+    gap: 80px;
+  }
 }
 
 /* ================================================================== */
@@ -424,9 +427,30 @@
   .inner-copyright {
     margin: 30px -20px 0 -20px;
   }
-  .text-box h2,
-  .text-box-b h2 {
+  .text-box h2 {
     font-size: 36px;
+  }
+
+  .text-box-b h2 {
+    font-size: 48px;
+  }
+  .news-box h3 {
+    font-size: 18px;
+  }
+  .news-box p {
+    font-size: 14px;
+  }
+  .inner-ben-sev {
+    gap: 40px;
+  }
+  .inner-ben-sev h2 {
+    padding: 0 0 20px 0;
+  }
+  .logo-scroller-container {
+    padding: 60px 0;
+  }
+  .footer {
+    padding: 30px 0 0 0;
   }
   .text-box-3 {
     text-align: center;
@@ -489,8 +513,12 @@
     font-size: 38px;
     line-height: 40px;
   }
+  .information {
+    padding: 80px 0;
+  }
   .left-container-box p {
-    font-size: 18px;
+    font-size: 16px;
+    padding: 20px 0 40px 0;
   }
   .right-container-box,
   .right-container-box-inv {
@@ -498,7 +526,7 @@
   }
   .right-container-box img,
   .right-container-box-inv img {
-    width: 100%;
+    width: 80%;
   }
   .inner-ben-sev h2,
   .text-black h2 {
@@ -524,7 +552,7 @@
     padding: 0 0 20px 0;
   }
   .ben-services {
-    padding: 40px 0 30px 0;
+    padding: 0 0 30px 0;
   }
   .text-center {
     text-align: start;
