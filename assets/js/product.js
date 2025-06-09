@@ -50,77 +50,76 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
 // slider ad card code ===================================================
 
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.slider-prod-card');
-    const dots = document.querySelectorAll('.dot');
-    const nextBtns = document.querySelectorAll('.nxt-btn');
-    const prevBtns = document.querySelectorAll('.prev-btn');
-    let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".slider-prod-card");
+  const dots = document.querySelectorAll(".dot");
+  const nextBtns = document.querySelectorAll(".nxt-btn");
+  const prevBtns = document.querySelectorAll(".prev-btn");
+  let currentIndex = 0;
 
-    // Function to update the slider
-    function updateSlider(index) {
-        // Update cards
-        cards.forEach((card, i) => {
-            card.classList.toggle('active', i === index);
-        });
-        
-        // Update dots
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === index);
-        });
-    }
-
-    // Next button click handler
-    nextBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % cards.length;
-            updateSlider(currentIndex);
-        });
+  // Function to update the slider
+  function updateSlider(index) {
+    // Update cards
+    cards.forEach((card, i) => {
+      card.classList.toggle("active", i === index);
     });
 
-    // Previous button click handler
-    prevBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-            updateSlider(currentIndex);
-        });
+    // Update dots
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
     });
+  }
 
-    // Dot click handlers
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentIndex = index;
-            updateSlider(currentIndex);
-        });
+  // Next button click handler
+  nextBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % cards.length;
+      updateSlider(currentIndex);
     });
+  });
+
+  // Previous button click handler
+  prevBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      updateSlider(currentIndex);
+    });
+  });
+
+  // Dot click handlers
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentIndex = index;
+      updateSlider(currentIndex);
+    });
+  });
 });
 
 // Technical Details ===============================================
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.inner-technical-dtl');
-    const nextBtn = document.querySelector('.nxt-btn-trs');
-    const prevBtn = document.querySelector('.prev-btn-trs');
-    let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".inner-technical-dtl");
+  const nextBtn = document.querySelector(".nxt-btn-trs");
+  const prevBtn = document.querySelector(".prev-btn-trs");
+  let currentIndex = 0;
 
-    function showCard(index) {
-        cards.forEach((card, i) => {
-            card.classList.toggle('active', i === index);
-        });
-    }
-
-    nextBtn.addEventListener('click', function() {
-        currentIndex = (currentIndex + 1) % cards.length;
-        showCard(currentIndex);
+  function showCard(index) {
+    cards.forEach((card, i) => {
+      card.classList.toggle("active", i === index);
     });
+  }
 
-    prevBtn.addEventListener('click', function() {
-        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-        showCard(currentIndex);
-    });
+  nextBtn.addEventListener("click", function () {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
+  });
 
-    // Initialize first card
-    showCard(0);
+  prevBtn.addEventListener("click", function () {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showCard(currentIndex);
+  });
+
+  // Initialize first card
+  showCard(0);
 });
