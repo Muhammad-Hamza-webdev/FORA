@@ -34,6 +34,9 @@ li {
 .p-80 {
   padding-top: 80px;
 }
+.pb-20 {
+  padding-bottom: 40px;
+}
 .w-400px {
   width: 400px;
 }
@@ -611,7 +614,6 @@ body:has(#mobile-menu:checked) .mobl-menu {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .title {
   display: flex;
