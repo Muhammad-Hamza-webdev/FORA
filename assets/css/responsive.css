@@ -229,6 +229,16 @@
   .clients-card {
     gap: 50px;
   }
+   .sol-card {
+    padding: 24% 2% 3% 3%;
+    width: 31.8%;
+  }
+.sol-card h3 {
+  font-size: 40px;
+}
+.sol-card p {
+  font-size: 16px;
+}
 }
 
 /* ================================================================== */
@@ -383,6 +393,13 @@
   .inner-faqs {
     max-width: 1600px;
   }
+  .all-sol-cards {
+  width: 100%;
+}
+ .sol-card {
+    padding: 28% 2% 3% 3%;
+    width: 32%;
+  }
 }
 
 /* ================================================================== */
@@ -499,10 +516,22 @@
     margin-bottom: 50px;
     font-size: 54px;
   }
-
   .accordion-title h3 {
     font-size: 16px;
   }
+  .soluction-prod {
+  padding: 40px 0 80px 0;
+}
+   .sol-card {
+    width: 31.8%;
+  }
+  .text-center-sol h2 {
+  font-size: 54px;
+  padding-bottom: 20px;
+}
+.text-center-sol span {
+  font-size: 18px;
+}
 }
 
 /* ================================================================== */
@@ -668,14 +697,15 @@
     max-width: 80%;
     display: inline-block;
   }
-
   .accordion-title {
     padding-right: 15px;
   }
-
   .accordion-title svg {
     flex-shrink: 0;
     margin-left: 10px;
+  }
+   .sol-card {
+    width: 48.6%;
   }
 }
 
@@ -979,5 +1009,19 @@
     font-size: 36px;
     line-height: 50px;
     margin-bottom: 40px;
+  }
+   .sol-card {
+    width: 100%;
+    padding: 75% 10% 10% 10%;
+   }
+    .soluction-prod {
+    padding: 20px 0 60px 0;
+  }
+   .text-center-sol h2 {
+    font-size: 36px;
+    padding-bottom: 10px;
+  }
+   .text-center-sol span {
+    font-size: 16px;
   }
 }
