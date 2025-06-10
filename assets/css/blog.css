@@ -76,6 +76,9 @@
   font-size: 24px;
   color: #cdcccc;
 }
+.text-content-info {
+  padding-left: 23px;
+}
 .text-content-info li {
   font-family: "REM", sans-serif;
   font-weight: 400;
@@ -95,7 +98,7 @@
   border-radius: 4px;
 }
 .reco-img {
-  width: 30%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -113,7 +116,7 @@
 }
 
 .reco-title {
-  width: 64%;
+  width: 63%;
   display: flex;
   flex-direction: column;
   gap: 20px;
