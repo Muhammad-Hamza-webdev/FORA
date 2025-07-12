@@ -122,6 +122,11 @@
   .blog-hero-img img {
     height: 420px;
   }
+
+  /* Pick your product */
+  .inner-pick-products {
+    width: 89%;
+  }
 }
 
 /* ================================================================== */
@@ -291,6 +296,22 @@
   }
   .blog-hero-text p {
     font-size: 22px;
+  }
+
+  /* get started pages */
+  .get-started {
+    background-position: -150px 370px;
+  }
+  .inner-get-started {
+    width: 100%;
+  }
+  .step-action-area {
+    width: 35%;
+  }
+
+  /* Pick your product */
+  .get-started-3 {
+    background-position: -630px 680px;
   }
 }
 
@@ -514,6 +535,34 @@
   .blog-card-simple span {
     font-size: 18px;
   }
+
+  /* get started pages */
+  .get-started {
+    padding: 50px 0 60px 0;
+    background-position: -150px 310px;
+  }
+
+  .step-action-area {
+    width: 40%;
+  }
+
+  /* Pick your product */
+  .get-started-3 {
+    padding: 50px 0 60px 0;
+    background-position: -720px 620px;
+  }
+  .inner-pick-products {
+    width: 100%;
+  }
+  .pick-product-cart {
+    width: 23.6%;
+  }
+  .prod-info {
+    height: 320px;
+  }
+  .prod-info img {
+    height: 140px;
+  }
 }
 
 /* ================================================================== */
@@ -688,6 +737,25 @@
   }
   .recent-blogs {
     padding: 10px 0 70px 0;
+  }
+
+  /* get started pages */
+  .get-started {
+    background-position: -290px 310px;
+  }
+
+  /* Pick your product */
+  .get-started-3 {
+    background-position: -760px 640px;
+  }
+  .pick-product-cart {
+    width: 23.3%;
+  }
+  .prod-info {
+    height: 300px;
+  }
+  .prod-info img {
+    height: 110px;
   }
 }
 
@@ -914,6 +982,22 @@
   }
   .blog-card-simple img {
     height: 160px;
+  }
+
+  /* get started pages */
+  .get-started {
+    background-position: -400px 310px;
+  }
+  .step-action-area {
+    width: 60%;
+  }
+
+  /* Pick your product */
+  .get-started-3 {
+    background-position: -1210px 910px;
+  }
+  .pick-product-cart {
+    width: 31.5%;
   }
 }
 
@@ -1285,5 +1369,37 @@
   }
   .smart-recent-blog-half {
     width: 100%;
+  }
+
+  /* get started pages */
+  .get-started {
+    background-position: -560px 310px;
+  }
+  .step-action-area {
+    width: 100%;
+  }
+  .step-box-main h3 {
+    padding: 30px 0;
+  }
+
+  /* Pick your product */
+  .get-started-3 {
+    background-position: -220px 3650px;
+    background-size: 810px;
+  }
+  .pick-product-cart {
+    width: 100%;
+  }
+  .prod-info img {
+    height: 180px;
+  }
+  .prod-info {
+    height: 360px;
+  }
+  .prod-info p {
+    font-size: 16px;
+  }
+  .inner-pick-products {
+    padding: 0 0 50px 0;
   }
 }
