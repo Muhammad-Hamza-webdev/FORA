@@ -18,6 +18,16 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.get-started-4 {
+  background-color: #080202;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 120px 0;
+  background-image: url("../img/form-page.webp");
+  background-position: -110px 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .inner-get-started-crtl {
   display: flex;
   justify-content: center;
@@ -192,7 +202,8 @@
   flex-wrap: wrap;
 }
 .product-info-qnt {
-  background-color: #211b1b;
+  background-color: #ffffff12;
+  backdrop-filter: blur(30px);
   padding: 12px;
   border-radius: 4px;
   width: 59%;
@@ -292,7 +303,8 @@
 }
 
 .product-price-pay {
-  background-color: #211b1b;
+  background-color: #ffffff12;
+  backdrop-filter: blur(30px);
   padding: 24px;
   border-radius: 4px;
   width: 39%;
