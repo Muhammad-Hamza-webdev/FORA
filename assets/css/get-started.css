@@ -157,3 +157,237 @@
   font-size: 16px;
   color: #ffffff;
 }
+
+/* review your cart */
+.review-cart {
+  width: 90%;
+}
+.row-50 {
+  display: flex;
+  padding: 0 0 30px 0;
+}
+.row-50 div {
+  width: 50%;
+}
+.row-50 span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+}
+.row-50 a {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #9c9a9a;
+  cursor: pointer;
+}
+.row-50 a:hover {
+  color: #ca262b;
+}
+.inner-review {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.product-info-qnt {
+  background-color: #211b1b;
+  padding: 12px;
+  border-radius: 4px;
+  width: 59%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: auto;
+}
+.single-prod-box {
+  display: flex;
+  background-color: #373232;
+  padding: 12px;
+  border-radius: 4px;
+  gap: 20px;
+}
+.img {
+  width: 40%;
+}
+.img img {
+  width: 100%;
+  height: 110px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.prod-de-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.prod-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px 12px 0;
+}
+.prod-name h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+.prod-name svg {
+  cursor: pointer;
+}
+.prod-name svg:hover g {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.quantity {
+  display: flex;
+}
+.input-box {
+  background-color: #373232;
+  border: 1px solid #878484;
+  padding: 5px;
+  color: #ffffff;
+  outline: none;
+  text-align: center;
+}
+.input-box[type="number"] {
+  -moz-appearance: textfield;
+}
+.minus,
+.plus {
+  background-color: #373232;
+  border: 1px solid #878484;
+  padding: 5px 8px;
+  color: #878484;
+}
+.minus {
+  border-radius: 3px 0 0 3px;
+  margin-right: -1px;
+  z-index: 2;
+}
+.plus {
+  border-radius: 0 3px 3px 0;
+  margin-left: -1px;
+  z-index: 2;
+}
+.minus:hover,
+.plus:hover {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.prod-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px 0 0;
+  align-items: center;
+}
+.prod-price > span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.product-price-pay {
+  background-color: #211b1b;
+  padding: 24px;
+  border-radius: 4px;
+  width: 39%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.btn-year {
+  display: flex;
+  gap: 20px;
+}
+.purchase {
+  border: 1px solid #a6a4a4;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 15px 50px;
+  width: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.purchase:hover {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+.purchase span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #a6a4a4;
+}
+.purchase:hover span {
+  color: #000000;
+}
+.product-price-pay span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+.price-year {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.year {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.year:hover {
+  background-color: #ffffff;
+}
+.year:hover span {
+  color: #000000;
+}
+.year:hover h6 {
+  color: #000000;
+}
+.year span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+.year h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+.shipping > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.shipping div span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+.shipping div h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #a6a4a4;
+}
